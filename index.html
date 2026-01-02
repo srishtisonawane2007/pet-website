@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<style>
+body{font-family:'Poppins',sans-serif;background:#f9fafb;}
+.navbar{box-shadow:0 4px 15px rgba(0,0,0,0.1);}
+.hero{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL3wIJhw1Z0Q5pIeW4RN_mcCYdcEvlwDNTbw&s');background-size:cover;background-position:center;height:90vh;color:#fff;display:flex;align-items:center;}
+.hero h1{font-size:4rem;font-weight:800;}
+.hero p{font-size:1.3rem;}
+.section-title{font-weight:700;margin-bottom:40px;}
+.service-card{border:none;box-shadow:0 10px 30px rgba(0,0,0,0.1);transition:0.3s;}
+.service-card:hover{transform:translateY(-10px);} 
+.service-card img{height:220px;object-fit:cover;}
+.stats{background:#0d6efd;color:white;}
+.stats h2{font-size:3rem;font-weight:700;}
+.testimonial{background:white;box-shadow:0 10px 25px rgba(0,0,0,0.1);border-radius:15px;padding:30px;}
+.pricing-card{border:none;box-shadow:0 10px 30px rgba(0,0,0,0.1);}
+.footer{background:#111;color:white;}
+
+.pet-footer {
+  background: linear-gradient(180deg, #0b1220, #050a14);
+  color: #cfd3dc;
+  font-size: 14px;
+}
+
+.pet-footer h5 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.pet-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pet-footer ul li {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.pet-footer ul li:hover {
+  color: #ffb703;
+}
+
+.footer-award p {
+  max-width: 900px;
+  margin: auto;
+  color: #e5e7eb;
+  font-size: 15px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+  color: #9ca3af;
+}
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#"><img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" width="40"> PetCare</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<section class="hero text-center">
+<div class="container">
+<h1>Premium Care For Your Beloved Pets</h1>
+<p class="my-4">Trusted by 10,000+ pet parents | Grooming • Training • Vet Care • Boarding</p>
+<a href="#services" class="btn btn-warning btn-lg">Get Started</a>
+</div>
+</section>
+
+<section id="services" class="container my-5 py-5">
+<h2 class="text-center section-title">Our Professional Services</h2>
+<div class="row g-4">
+<div class="col-md-4"><div class="card service-card"><img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d"><div class="card-body"><h5>Pet Grooming</h5><p>Luxury grooming with certified professionals ensuring hygiene, style and comfort.</p></div></div></div>
+<div class="col-md-4"><div class="card service-card"><img src="data:image/jpeg;base64,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"><div class="card-body"><h5>Pet Training</h5><p>Obedience, behavior correction & advanced skill training programs.</p></div></div></div>
+<div class="col-md-4"><div class="card service-card"><img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97"><div class="card-body"><h5>Veterinary Care</h5><p>24x7 medical assistance, vaccination & emergency services.</p></div></div></div>
+</div>
+</section>
+
+<section class="stats py-5">
+<div class="container text-center">
+<div class="row">
+<div class="col-md-3"><h2>10K+</h2><p>Happy Pets</p></div>
+<div class="col-md-3"><h2>500+</h2><p>Expert Staff</p></div>
+<div class="col-md-3"><h2>24/7</h2><p>Support</p></div>
+<div class="col-md-3"><h2>15+</h2><p>Years Experience</p></div>
+</div>
+</div>
+</section>
+
+<section id="about" class="container my-5 py-5">
+<div class="row align-items-center">
+<div class="col-md-6"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b" class="img-fluid rounded"></div>
+<div class="col-md-6"><h2>Why Choose PetCare?</h2><p>We are India’s leading premium pet service provider offering world-class facilities, trained professionals and unmatched care standards.</p><ul><li>ISO Certified Clinics</li><li>Experienced Veterinarians</li><li>Modern Infrastructure</li><li>Personalized Care Plans</li></ul></div>
+</div>
+</section>
+
+<section class="container my-5 py-5">
+<h2 class="text-center section-title">What Pet Parents Say</h2>
+<div class="row g-4">
+<div class="col-md-4"><div class="testimonial"><p>"Best pet service ever! My dog loves PetCare."</p><strong>- Rahul</strong></div></div>
+<div class="col-md-4"><div class="testimonial"><p>"Professional vets and very clean environment."</p><strong>- Sneha</strong></div></div>
+<div class="col-md-4"><div class="testimonial"><p>"Highly recommended for grooming & training."</p><strong>- Aman</strong></div></div>
+</div>
+</section>
+
+<section id="pricing" class="container my-5 py-5">
+<h2 class="text-center section-title">Affordable Plans</h2>
+<div class="row g-4">
+<div class="col-md-4"><div class="card pricing-card p-4 text-center"><h4>Basic</h4><h2>₹999</h2><p>Grooming + Checkup</p></div></div>
+<div class="col-md-4"><div class="card pricing-card p-4 text-center"><h4>Standard</h4><h2>₹1999</h2><p>Training + Vet Care</p></div></div>
+<div class="col-md-4"><div class="card pricing-card p-4 text-center"><h4>Premium</h4><h2>₹2999</h2><p>All Services Included</p></div></div>
+</div>
+</section>
+
+<section id="contact" class="container my-5 py-5">
+<h2 class="text-center section-title">Contact Us</h2>
+<div class="row justify-content-center">
+<div class="col-md-6">
+<input class="form-control mb-3" placeholder="Your Name">
+<input class="form-control mb-3" placeholder="Email">
+<textarea class="form-control mb-3" placeholder="Message"></textarea>
+<button class="btn btn-primary w-100">Send Message</button>
+</div>
+</div>
+</section>
+
+<footer class="footer text-center py-4">
+<!-- ================= PREMIUM FOOTER ================= -->
+<footer class="pet-footer">
+  <div class="container py-5">
+
+    <!-- Top Award Strip -->
+    <div class="text-center mb-5 footer-award">
+      <p>
+        We are proud to be a trusted pet-care brand, delivering love, quality,
+        and care to pets across India. Thank you for choosing us and being a part
+        of our growing pet family 🐾
+      </p>
+    </div>
+
+    <div class="row">
+
+      <!-- Shop by Pet -->
+      <div class="col-md-2 col-6">
+        <h5>Shop by Pet</h5>
+        <ul>
+          <li>Dogs</li>
+          <li>Cats</li>
+          <li>Puppies</li>
+          <li>Kittens</li>
+          <li>Small Animals</li>
+        </ul>
+      </div>
+
+      <!-- Customer Care -->
+      <div class="col-md-2 col-6">
+        <h5>Customer Care</h5>
+        <ul>
+          <li>Contact Us</li>
+          <li>FAQs</li>
+          <li>Returns & Exchange</li>
+          <li>Privacy Policy</li>
+          <li>Terms & Conditions</li>
+          <li>Franchise Enquiry</li>
+        </ul>
+      </div>
+
+      <!-- Our Services -->
+      <div class="col-md-2 col-6">
+        <h5>Our Services</h5>
+        <ul>
+          <li>Pet Grooming</li>
+          <li>Veterinary Care</li>
+          <li>Pet Training</li>
+          <li>Pet Boarding</li>
+          <li>Pet Nutrition</li>
+          <li>Pet Adoption</li>
+        </ul>
+      </div>
+
+      <!-- About Brand -->
+      <div class="col-md-3 col-6">
+        <h5>The World of PetCare</h5>
+        <ul>
+          <li>About Us</li>
+          <li>Careers <span class="badge bg-warning text-dark">Hiring</span></li>
+          <li>Awards</li>
+          <li>Store Locator</li>
+          <li>PetCare Blog</li>
+          <li>Community & Events</li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-md-3">
+        <h5>Join Our Pet Family</h5>
+        <p>
+          Subscribe for pet care tips, exclusive offers,
+          new services and updates.
+        </p>
+        <input type="email" class="form-control mb-3" placeholder="Your Email Address">
+        <button class="btn btn-warning w-100 fw-bold">Subscribe</button>
+      </div>
+
+    </div>
+
+    <!-- Bottom Strip -->
+    <div class="footer-bottom text-center mt-5">
+      <p>© 2026 PetCare. All Rights Reserved.</p>
+      <p>Designed for Academic Project & Professional Demonstration</p>
+    </div>
+
+  </div>
+</footer>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
