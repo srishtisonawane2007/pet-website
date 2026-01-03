@@ -1,5 +1,7 @@
 # pet-website
 # 🐾 PetCare – Pet Care & Services Website
+link-https://srishtisonawane2007.github.io/pet-website/
+
 
 PetCare is a responsive and content-rich pet care website developed as an academic project.
 The website provides complete information about pet services such as grooming, veterinary care,
@@ -31,7 +33,4 @@ The project focuses on frontend development using HTML, CSS and Bootstrap.
 - **Bootstrap 5** – Responsive design and components  
 
 
----
-
-## 📂 Project Structure
 
